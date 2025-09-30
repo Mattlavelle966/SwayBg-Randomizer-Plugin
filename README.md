@@ -1,12 +1,27 @@
 
-## Overview
-`swaybg-randomizer` randomizes wallpapers on demand by launching or replacing `swaybg` instances. It leans on `utils.lua` to discover running processes and select random images, following the behaviour outlined in `bg-changer.lua`’s inline description.
+# SwayBG-Randomizer
+
+Welcome to **SwayBG-Randomizer**!
+
+This is a Sway-BG plugin that allows you to bind a key (or other events) to automatically swap your background image randomly. The randomizer works by checking for any pre-existing Sway PIDs and then determines whether to launch one or two instances of Sway:
+
+1. **One instance** for a filler default background.
+2. **A second instance** for swapping to a random image every time the event is triggered.
+
+If a SwayBG instance is already running, the plugin will default to that image during each random image transition.
+
+## Features
+- **Auto Background Swap:** Automatically change your background with every event trigger.
+- **Sway Integration:** Works seamlessly with Sway window manager.
+- **Flexible Configuration:** Can be easily configured with keybindings or other events.
+- **Random Image Selection:** Choose a random image from a specified directory.
 
 ## Installation
 ```bash
+git clone https://github.com/Mattlavelle966/SwayBg-Randomizer-Plugin.git
 sudo pacman -S lua swaybg
 ```
-This installs Lua for running the helper scripts and `swaybg` for wallpaper management. Ensure your wallpapers live under `~/pics/Wallpapers/` or adjust the path in `bg-changer.lua`.
+This clones this repo and installs Lua for running the helper scripts and `swaybg` for wallpaper management. Ensure your wallpapers live under `~/pics/Wallpapers/` or adjust the path in `bg-changer.lua`.
 
 ## Usage
 1. clone this repo to your chosen path.
