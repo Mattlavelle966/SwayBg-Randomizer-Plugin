@@ -21,7 +21,7 @@ If a SwayBG instance is already running, the plugin will default to that image d
 git clone https://github.com/Mattlavelle966/SwayBg-Randomizer-Plugin.git
 sudo pacman -S lua swaybg
 ```
-This clones this repo and installs Lua for running the helper scripts and `swaybg` for wallpaper management. Ensure your wallpapers live under `~/pics/Wallpapers/` or adjust the path in `bg-changer.lua`.
+This clones the repo and installs Lua for running the helper scripts and `swaybg` for wallpaper management. Ensure your wallpapers live under `~/pics/Wallpapers/` or adjust the path in `bg-changer.lua`.
 
 ## Usage
 1. `recomended` in your desktop env config Bind a key of your choice to `cd <swaybg-randomizer dir> && lua bg-changer.lua`)
