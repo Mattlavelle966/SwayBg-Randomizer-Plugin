@@ -12,7 +12,7 @@ If a SwayBG instance is already running, the plugin will default to that image d
 
 ## Features
 - **Auto Background Swap:** Automatically change your background with every event trigger.
-- **Sway Integration:** Works seamlessly with Sway window manager.
+- **Swaybg Integration:** Works seamlessly with Swaybg background manager.
 - **Flexible Configuration:** Can be easily configured with keybindings or other events.
 - **Random Image Selection:** Choose a random image from a specified directory.
 
@@ -24,9 +24,8 @@ sudo pacman -S lua swaybg
 This clones this repo and installs Lua for running the helper scripts and `swaybg` for wallpaper management. Ensure your wallpapers live under `~/pics/Wallpapers/` or adjust the path in `bg-changer.lua`.
 
 ## Usage
-1. clone this repo to your chosen path.
-2. `recomended` in your desktop env config Bind a key of your choice to `cd <swaybg-randomizer dir> && lua bg-changer.lua`)
-3. `NOTE:` You must run lua from within the cloned repo otherwise lua wont be able to find the utils package.
+1. `recomended` in your desktop env config Bind a key of your choice to `cd <swaybg-randomizer dir> && lua bg-changer.lua`)
+2. `NOTE:` You must run lua from within the cloned repo otherwise lua wont be able to find the utils package.
 
 ## Configuration
 - `wallpapersDirectory`: default is `~/pics/Wallpapers/`. Change this constant to target another folder.
